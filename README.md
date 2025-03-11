@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💻 Gerenciamento de Usuários - Pro Girls 💜
 
-## Getting Started
+Bem-vinda ao Pro Girls - Gerenciamento de Usuários! 🚀💕
 
-First, run the development server:
+Este projeto foi criado com muito carinho para oferecer um sistema seguro e eficiente para o gerenciamento de usuários. Ele conta com funcionalidades essenciais como:
 
+### Tecnologias utilizadas:
+
+- 🎨 **Frontend:** JavaScript, React e Tailwind CSS ⚛️✨
+- 🚀 **Backend:** Node.js com Express 🟢 🚀
+- 🗄️ **Banco de Dados:** MongoDB 🍃 
+- 🔐 **Autenticação e segurança:**  bcrypt e JWT 🔑 🔐
+
+## 🌟 Funcionalidades
+
+✅ Cadastro de usuários 👩‍💻<br>
+✅ Atualização de perfil ✨<br>
+✅ Listagem de usuários 📋<br>
+✅ Login seguro com autenticação JWT 🔑<br>
+✅ Controle de acesso baseado em permissões 🔒<br>
+✅ Recuperação de senha 🔄<br>
+✅ Exclusão de conta ❌
+
+Tudo isso garantindo a segurança e integridade dos dados! 💖
+
+## 📌 Estrutura do Projeto
+
+O projeto é composto por **5 telas principais**:
+
+1. **Tela de Login** - Permite que usuários registrados realizem login.
+2. **Tela de Cadastro** - Novo usuário pode se cadastrar.
+3. **Perfil do Usuário** - Exibe e permite a edição dos dados do usuário.
+4. **Administração de Usuários** - Tela para gerenciamento dos usuários cadastrados.
+5. **Tela de Recuperação de Senha** - Permite que usuários registrados solicitem o reset de senha.
+
+## 🚀 Instalação e Configuração
+
+### 🔹 Requisitos
+- **Node.js** instalado.
+- **MongoDB** configurado.
+
+## 📌 Como Executar o Projeto
+
+1. **Clone este repositório:** 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/damacosta/frontend-progirls-gerenciamento-de-usuarios.git
+cd frontend-progirls-gerenciamento-de-usuarios
 ```
+2. **Instale as dependências:** `npm install`
+3. Configure as variáveis de ambiente no arquivo `.env.`
+4. **Inicie o servidor**: `npm start`
+5. O backend estará rodando em: http://localhost:5000 🚀
+6. O frontend pode ser acessado em: http://localhost:3000 🎨
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💜 Contribuição
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Quer contribuir? Será incrível ter você por aqui! 💖
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Faça um fork do repositório. 
+2. Crie um branch para sua feature (`git checkout -b minha-feature`)
+3. Faça commit das suas alterações (`git commit -m 'Adiciona nova feature'`)
+4. Envie para o branch principal (`git push origin minha-feature`)
+5. Abra um Pull Request
 
-## Learn More
+## 📜 Licença
 
-To learn more about Next.js, take a look at the following resources:
+Este projeto está sob a licença **MIT**. Sinta-se à vontade para utilizá-lo e modificá-lo conforme necessário.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🦄💖 Se tiver qualquer dúvida ou sugestão, entre em contato! Vamos juntas construir tecnologia para um futuro mais inclusivo e acessível. 🚀✨
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⭐ Se você gostou do projeto, não esqueça de dar uma **estrela**! 
