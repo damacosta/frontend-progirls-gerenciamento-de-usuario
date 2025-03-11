@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+
+:root {
+  --color-dark-green: #0F3707;
+  --color-green: #1B7A08;
+  --color-light-green: #4CAF50;
+  --color-lightest-green: #F6FFF4;
+  --color-white: #FFFFFF;
+  --color-pink: #DB009F;
+  --color-gray: #504E4E;
+  --color-light-gray:#868686;
+  --color-black: #000000;
+  --font-family:"Zen Haku Gothic Antique", sans-serif ;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
