@@ -7,13 +7,8 @@ module.exports = {
   ],
   theme: {
     fontFamily:{
-      'sans-serif':['Zen Kaku Gothic Antique'],
-    },
-    screens:{
-      'mobile': '201px',
-      'tablet': '501px',
-      'laptop': '901px',
-      'desktop': '1501px',
+      'sans':['Zen Kaku Gothic Antique'],
+      'title': ['Zendaya']
     },
     colors:{
     "color-dark-green": "#0F3707",
