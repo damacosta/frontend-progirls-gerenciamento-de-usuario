@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&family=Zeyada&display=swap');
+
 
 :root {
   --color-dark-green: #0F3707;
@@ -14,7 +15,15 @@
   --color-gray: #504E4E;
   --color-light-gray:#868686;
   --color-black: #000000;
-  --font-family:"Zen Haku Gothic Antique", sans-serif ;
+  --font-family:"Zen Kaku Gothic Antique", sans-serif ;
+}
+
+@layer base {
+  .font-title {
+    font-family: 'Zendaya', cursive !important;
+    font-style: normal;
+    font-weight: 400;
+  }
 }
 
 * {
