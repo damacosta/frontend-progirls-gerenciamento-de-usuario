@@ -29,8 +29,7 @@ export default function Login() {
           />
           <button
             type="submit"
-            className="bg-color-black text-color-white h-10 w-70 mt-8"
-          >
+            className="bg-color-black text-color-white h-10 w-70 mt-8">
             Entrar
           </button>
         </form>
