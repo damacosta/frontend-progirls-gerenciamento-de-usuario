@@ -1,15 +1,17 @@
+'use client';
 import Image from "next/image";
-import "../../src/globals.css";
+import Link from 'next/link';
+import "../globals.css";
 
 export default function Recovery() {
   return (
     <main className="bg-gradient-to-r from-color-green via-color-white to-color-pink w-full h-screen flex flex-col items-center">
-      <a
+      <Link
         href="./login"
         className="p-6 text-color-white w-screen underline underline-offset-1 font-bold text-xl"
       >
         Voltar
-      </a>
+      </Link>
       <Image
         src="/Logo.png"
         alt="Logo Eco tye"
