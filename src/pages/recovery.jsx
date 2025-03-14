@@ -17,7 +17,8 @@ export default function Recovery() {
         height={120}
         className="mx-10 mb-6"
       />
-      <div className="bg-color-lightest-green rounded-md flex flex-col items-center h-[60vh] w-1/3 justify-between p-8">
+      {/* inclusão style */}
+      <div className="bg-color-lightest-green rounded-md flex flex-col items-center h-[60vh] w-1/3 justify-between p-8"> 
         <div className="flex flex-col text-center">
           <h2 className="font-title text-4xl pb-6">Eco Tye</h2>
           <p className="text-color-light-gray text-sm">
