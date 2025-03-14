@@ -11,19 +11,25 @@ export default function Login() {
         height={120}
         className="m-10"
       />
-      <div className="bg-color-lightest-green rounded-md flex flex-col items-center h-[60vh] w-1/3 py-10 justify-evenly">
-        <h2 className="font-title text-4xl">Eco Tye</h2>
-        <p className="text-color-light-gray">Gerenciador de Usuários</p>
-        <form
-          action=""
-          method="get"
-          className="h-1/3 w-60 flex flex-col justify-evenly "
-        >
-          <input type="text" className="h-10 w-70" />
-          <input type="text" className="h-10 w-70" />
+      <div className="bg-color-lightest-green rounded-md flex flex-col items-center h-[60vh] w-1/3 p-8 justify-between">
+        <div className="flex flex-col text-center">
+          <h2 className="font-title text-4xl pb-6">Eco Tye</h2>
+          <p className="text-color-light-gray text-sm">
+            Gerenciador de Usuários
+          </p>
+        </div>
+        <form action="" method="get" className="h-1/2 w-60 flex flex-col">
+          <input
+            type="text"
+            className="h-10 w-70 border-x-2 border-t-2 border-color-light-gray"
+          />
+          <input
+            type="text"
+            className="h-10 w-70 border-2 border-color-light-gray"
+          />
           <button
             type="submit"
-            className="bg-color-black text-color-white h-10 w-70"
+            className="bg-color-black text-color-white h-10 w-70 mt-8"
           >
             Entrar
           </button>
