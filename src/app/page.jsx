@@ -9,29 +9,32 @@ import Link from 'next/link';
 
 export default function Login() {
 
-  const [cpf, setCpf] = useState("");
-  const [senha, setSenha] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const router = useRouter(); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (cpf.length !== 11) {
-      setError("O CPF deve conter 11 dígitos.");
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setError("Email inválido. Digite um email válido.");
       return;
     }
 
-    if (senha.length < 8) {
+    if (password.length < 8) {
       setError("A senha deve ter pelo menos 8 caracteres.");
       return;
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/login", {
-        cpf,
-        senha,
+      const response = await axios.post("http://localhost:5000/api/login", {
+        email,
+        password,
       });
+
+      console.log("Resposta do servidor:", response);
 
     if (response.data.token) {
         localStorage.setItem("token", response.data.token);
@@ -40,15 +43,13 @@ export default function Login() {
       alert("Login bem-sucedido!");
       router.push("/admin");
     } catch (err) {
+      console.error("Erro ao fazer login:", err);
       setError(err.response?.data?.message || "Erro ao fazer login");
     }
   };
 
-  const handleCpfChange = (e) => {
-    const value = e.target.value.replace(/\D/g, "");
-    if (value.length <= 11) {
-      setCpf(value);
-    }
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
   };
   
   return (
@@ -74,11 +75,10 @@ export default function Login() {
 
         <label className="text-color-gray">Usuário</label>
           <input
-            type="text" placeholder="1234567900"
-            value={cpf}
-            onChange={handleCpfChange}
+            type="text" placeholder="E-mail"
+            value={email}
+            onChange={handleEmailChange}
             required
-            maxLength="11"
             className="h-10 w-70 border-2 border-color-light-gray rounded-md pl-2"
           />
 
@@ -86,8 +86,8 @@ export default function Login() {
           <input
             type="password"
             placeholder="Digite sua senha"
-            value={senha}
-            onChange={(e) => setSenha(e.target.value)}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             required
             minLength="8"
             className="h-10 w-70 border-2 border-color-light-gray rounded-md pl-2"
